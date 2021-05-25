@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import rigoImage from "../../img/rigo-baby.jpg";
 import "../../styles/home.scss";
 
 export const Home = () => {
+    useEffect(() => {
+        actions.createContact();
+        actions.getContact();
+        actions.updateContact();
+        actions.deleteContact();
+        actions.listContacts();
+	}, []);
 
 		return (
 			<div className="text-center mt-5">
