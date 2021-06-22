@@ -74,11 +74,7 @@ export const AddContact = () => {
 						/>
 					</div>
 					<Link to="/">
-						<button
-							type="button"
-							className="btn btn-primary form-control"
-							onClick={handleSaveContact}
-				>
+						<button type="button" className="btn btn-dark form-control" onClick={handleSaveContact}>
 							save
 						</button>
 					</Link>

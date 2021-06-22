@@ -42,7 +42,7 @@ export const UpdateContact = () => {
 			agenda_slug: store.agenda_slug
 		};
 
-		actions.updateContact(params.id, newContact); 
+		actions.updateContact(params.id, newContact);
 
 		alert("Tu contacto " + name + " se ha guardado");
 		setName("");
@@ -97,11 +97,7 @@ export const UpdateContact = () => {
 						/>
 					</div>
 					<Link to="/">
-						<button
-							type="button"
-							className="btn btn-warning form-control"
-							onClick={handleSaveContact}
-						>
+						<button type="button" className="btn btn-warning form-control" onClick={handleSaveContact}>
 							Guardar Datos
 						</button>
 					</Link>
